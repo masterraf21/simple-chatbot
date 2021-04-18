@@ -12,6 +12,10 @@ const UserSchema = new Schema({
   birthday: {
     type: Date,
   },
+  status: {
+    type: String,
+    required: true,
+  },
 });
 
 const UserModel = mongoose.model('Users', UserSchema);
